@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
 
     // Make an instance of the view model to store questions and advice
-    @StateObject private var advisor = AdviceViewModel()
+    @ObservedObject var advisor = AdviceViewModel()
 
     // Stores the current question being asked
     @State private var input = ""
